@@ -4,7 +4,6 @@ import MainComponent from "./components/MaiComponent/MainComponent";
 function App() {
   const [allData, setAllData] = useState({
     fontFamily: "'Inter', sans-serif",
-    circleBorder: "18px solid #F2F4F7",
     background: "#fff",
     date: "Thursday, 8. Feb 2024",
     dateColor: "#155EEF",
@@ -243,7 +242,7 @@ function App() {
         background: allData.background,
       }}
     >
-      <MainComponent {...allData} border={allData.circleBorder} />
+      <MainComponent {...allData} />
     </div>
   );
 }
